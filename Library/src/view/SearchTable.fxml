@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="636.0" prefWidth="754.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="ControllerLibrary.SearchTableController">
+    <children>
+        <TableView fx:id="tblSearch" layoutX="19.0" layoutY="95.0" prefHeight="474.0" prefWidth="634.0"
+                   AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <columns>
+                <TableColumn fx:id="bookId" prefWidth="75.0" text="Book ID"/>
+                <TableColumn fx:id="name" prefWidth="186.0" text="Name"/>
+                <TableColumn fx:id="authorName" prefWidth="143.0" text="Author Name"/>
+                <TableColumn fx:id="categoryName" prefWidth="143.0" text="Category Name"/>
+                <TableColumn fx:id="edition" prefWidth="53.0" text="Edition"/>
+                <TableColumn fx:id="qty" prefWidth="33.0" text="Qty"/>
+            </columns>
+        </TableView>
+        <Label fx:id="lblSearch" layoutX="79.0" layoutY="24.0" prefHeight="25.0" prefWidth="166.0" text="Book Details"
+               textFill="#5e10da">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="lblBack" fitHeight="30.0" fitWidth="25.0" layoutX="20.0" layoutY="24.0"
+                   onMouseClicked="#lblBack_Clicked" pickOnBounds="true" preserveRatio="true"
+                   AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="24.0">
+            <image>
+                <Image url="@../images/literature_filled_100px.png"/>
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="430.0" layoutY="49.0" prefHeight="25.0"
+                      prefWidth="303.0" promptText="Search">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </JFXTextField>
+    </children>
+</AnchorPane>

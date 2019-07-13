@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="466.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerLibrary.DashBoardController">
+    <children>
+        <Pane prefHeight="466.0" prefWidth="1006.0">
+            <children>
+                <ImageView fx:id="imgAdmin" fitHeight="100.0" fitWidth="100.0" layoutX="40.0" layoutY="166.0" onMouseClicked="#imgAdmin_Clicked" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/boy.png" />
+                    </image>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="imgManageBooks" fitHeight="100.0" fitWidth="100.0" layoutX="240.0" layoutY="166.0" onMouseClicked="#imgManageBooks_Clicked" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/scholarship.png" />
+                    </image>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="imgManageStudents" fitHeight="100.0" fitWidth="100.0" layoutX="440.0" layoutY="166.0" onMouseClicked="#imgManageStudents_Clicked" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/meeting.png" />
+                    </image>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="imgReturn" fitHeight="100.0" fitWidth="100.0" layoutX="840.0" layoutY="166.0" onMouseClicked="#imgReturn_Clicked" pickOnBounds="true" preserveRatio="true">
+                    <effect>
+                        <Reflection />
+                    </effect>
+                    <image>
+                        <Image url="@../images/Books-icon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgBorrow" fitHeight="100.0" fitWidth="100.0" layoutX="640.0" layoutY="166.0" onMouseClicked="#imgBorrow_Clicked" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/learning.png" />
+                    </image>
+                    <effect>
+                        <Reflection />
+                    </effect>
+                </ImageView>
+                <Label fx:id="lblAdmin" layoutX="57.0" layoutY="350.0" text="Admin" textFill="#11d9a3">
+                    <font>
+                        <Font name="Corbel" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblManageBooks" layoutX="217.0" layoutY="350.0" text="Manage Books" textFill="#11d9a3">
+                    <font>
+                        <Font name="Corbel" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblManageStudents" layoutX="403.0" layoutY="350.0" text="Manage Students" textFill="#11d9a3">
+                    <font>
+                        <Font name="Corbel" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblBorrow" layoutX="654.0" layoutY="350.0" text="Borrow" textFill="#11d9a3">
+                    <font>
+                        <Font name="Corbel" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="859.0" layoutY="350.0" text="Retun" textFill="#11d9a3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            <JFXButton fx:id="btnLogout" layoutX="914.0" layoutY="421.0" onAction="#btnLogout" prefHeight="25.0" prefWidth="73.0" text="Log Out" />
+            </children>
+        </Pane>
+        <Label alignment="CENTER" prefHeight="108.0" prefWidth="1006.0" stylesheets="@Styles/dashboard.css" text="LIBRARY MANAGEMENT SYSTEM" textFill="#1026cd">
+            <font>
+                <Font name="Constantia" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

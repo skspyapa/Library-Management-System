@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerLibrary.DepartmentController">
+   <children>
+      <TableView fx:id="tblDepartment" layoutX="49.0" layoutY="209.0" prefHeight="200.0" prefWidth="522.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <columns>
+          <TableColumn prefWidth="249.0" text="ID" />
+          <TableColumn prefWidth="310.0" text="Department" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtDepID" layoutX="132.0" layoutY="121.0" onAction="#txtDepID_Action" />
+      <JFXTextField fx:id="txtDepName" layoutX="445.0" layoutY="121.0" onAction="#txtDepName_Action" />
+      <Label layoutX="20.0" layoutY="125.0" text="Department ID" />
+      <Label layoutX="328.0" layoutY="125.0" text="Department Name" />
+      <Label alignment="CENTER" layoutY="20.0" prefHeight="17.0" prefWidth="600.0" text="Department ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBack" fitHeight="40.0" fitWidth="35.0" layoutX="20.0" layoutY="24.0" onMouseClicked="#imgBack_Action" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/left_filled_100px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSave" layoutX="274.0" layoutY="172.0" onAction="#btnSave_Action" text="Save" />
+      <Label fx:id="lblDepartment" layoutX="467.0" layoutY="33.0" onMouseClicked="#lblDepartment_Action" prefHeight="17.0" prefWidth="99.0" text="New Department" />
+   </children>
+</AnchorPane>

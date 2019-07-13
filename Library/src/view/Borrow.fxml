@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="684.0" prefWidth="609.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="ControllerLibrary.BorrowController">
+    <children>
+        <JFXTextField fx:id="txtStudentID" labelFloat="true" layoutX="355.0" layoutY="140.0"
+                      onAction="#txtStudentID_Action" prefHeight="25.0" prefWidth="217.0" promptText="Student ID">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtBookId" labelFloat="true" layoutX="44.0" layoutY="140.0" onAction="#txtBookId_Action"
+                      prefWidth="217.0" promptText="Book ID">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtDate" editable="false" labelFloat="true" layoutX="355.0" layoutY="90.0"
+                      onAction="#txtDate_Action" prefHeight="25.0" prefWidth="217.0" promptText="Date">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </JFXTextField>
+        <TableView fx:id="tblBorrow" layoutX="20.0" layoutY="317.0" prefHeight="318.0" prefWidth="569.0"
+                   AnchorPane.leftAnchor="20.0">
+            <columns>
+                <TableColumn prefWidth="65.0" text="Book ID"/>
+                <TableColumn prefWidth="297.0" text="Name"/>
+                <TableColumn prefWidth="107.0" text="Borrow Date"/>
+                <TableColumn prefWidth="99.0" text="Due Date"/>
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnAdd" layoutX="267.0" layoutY="267.0" onAction="#btnAdd_Action" prefHeight="25.0"
+                   prefWidth="76.0" text="Add"/>
+        <ImageView fx:id="lblBack" fitHeight="30.0" fitWidth="25.0" layoutX="19.0" layoutY="14.0"
+                   onMouseClicked="#lblBack_Clicked" pickOnBounds="true" preserveRatio="true"
+                   AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="24.0">
+            <image>
+                <Image url="@../images/literature_filled_100px.png"/>
+            </image>
+        </ImageView>
+        <Label layoutX="74.0" layoutY="24.0" prefHeight="25.0" prefWidth="176.0" text="Enter Borrow Details"
+               textFill="#5e10da">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtBorrowId" labelFloat="true" layoutX="45.0" layoutY="90.0" onAction="#txtBorrowId_Action"
+                      prefHeight="25.0" prefWidth="217.0" promptText="Borrow ID">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtBookName" labelFloat="true" layoutX="44.0" layoutY="200.0" prefHeight="25.0"
+                      prefWidth="217.0" promptText="Book Name">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtStudentName" labelFloat="true" layoutX="355.0" layoutY="200.0" prefHeight="25.0"
+                      prefWidth="217.0" promptText="Student Name">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </JFXTextField>
+        <Label fx:id="lblNewBorrow" alignment="CENTER" layoutX="464.0" layoutY="27.0"
+               onMouseClicked="#lblNewBorrow_Click" prefHeight="19.0" prefWidth="94.0" text="New Borrow"
+               textFill="#5e10da">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

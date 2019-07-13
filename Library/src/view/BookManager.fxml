@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerLibrary.BookController">
+    <children>
+        <Label fx:id="lblDetail" layoutX="80.0" layoutY="20.0" prefHeight="18.0" prefWidth="137.0" text="Enter Book Detail" textFill="#5e10da" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="493.0">
+            <font>
+                <Font name="Constantia" size="16.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtID" labelFloat="true" layoutX="55.0" layoutY="80.0" onKeyPressed="#txtID_Action" prefHeight="25.0" prefWidth="430.0" promptText="ID" AnchorPane.leftAnchor="55.0" />
+        <JFXTextField fx:id="txtName" labelFloat="true" layoutX="55.0" layoutY="140.0" onKeyPressed="#txtName_Action" prefHeight="25.0" prefWidth="430.0" promptText="Name" AnchorPane.leftAnchor="55.0" />
+        <JFXTextField fx:id="txtAuthorID" labelFloat="true" layoutX="55.0" layoutY="200.0" onKeyPressed="#txtAuthorID_Action" prefHeight="25.0" prefWidth="430.0" promptText="Author Name" AnchorPane.leftAnchor="55.0" />
+        <JFXTextField fx:id="txtCategoryID" labelFloat="true" layoutX="55.0" layoutY="260.0" onKeyPressed="#txtCategoryID_Action" prefHeight="25.0" prefWidth="430.0" promptText="Category ID" AnchorPane.leftAnchor="55.0" />
+        <JFXTextField fx:id="txtEdition" labelFloat="true" layoutX="55.0" layoutY="320.0" onKeyPressed="#txtEdition_Action" prefHeight="25.0" prefWidth="430.0" promptText="Edition " AnchorPane.leftAnchor="55.0" />
+        <JFXButton fx:id="btnAddBook" buttonType="RAISED" layoutX="574.0" layoutY="80.0" onAction="#btnAddBook_Clicked" text="Add Book" textFill="#16a5cc" />
+        <JFXButton fx:id="btnSearchByBook" buttonType="RAISED" layoutX="561.0" layoutY="140.0" onAction="#btnSearchByBook_Clicked" text="Search By Book" textFill="#16a5cc" />
+        <JFXButton fx:id="btnSearchByAuthor" buttonType="RAISED" layoutX="555.0" layoutY="200.0" onAction="#btnSearchByAuthor_Clicked" text="Search By Author" textFill="#16a5cc" />
+        <JFXButton fx:id="btnSearchByCategory" buttonType="RAISED" layoutX="550.0" layoutY="260.0" onAction="#btnSearchByCategory_Clicked" text="Search By Category" textFill="#16a5cc" />
+        <JFXButton fx:id="btnEnter" buttonType="RAISED" layoutX="613.0" layoutY="378.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#btnEnter_Clicked" prefHeight="30.0" prefWidth="60.0" text="Enter">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="55.0" layoutY="380.0" onAction="#txtQty_Action" prefHeight="25.0" prefWidth="430.0" promptText="Qty" AnchorPane.leftAnchor="55.0" />
+        <ImageView fx:id="lblBack" fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="20.0" onMouseClicked="#lblBack_Clicked" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="20.0">
+            <image>
+                <Image url="@../images/literature_filled_100px.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgCategorySelect" fitHeight="30.0" fitWidth="30.0" layoutX="504.0" layoutY="258.0" onMouseEntered="#imgCategorySelect" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/settings_96px.png" />
+            </image>
+        </ImageView>
+        <JFXListView fx:id="lstPopup" layoutX="433.0" layoutY="288.0" onMouseExited="#lstPopup_OnMouseExit" prefHeight="163.0" prefWidth="173.0" />
+    </children>
+</AnchorPane>

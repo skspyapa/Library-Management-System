@@ -1,0 +1,19 @@
+.root{
+    -fx-background-color: #dafffc;
+}
+#imgAdmin:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0) ;
+}
+#imgManageBooks:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0) ;
+}
+#imgManageStudents:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0) ;
+}
+#imgBorrow:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0) ;
+}
+#imgReturn:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0) ;
+}
+

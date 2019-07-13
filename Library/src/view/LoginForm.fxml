@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--suppress XmlPathReference -->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="523.0" stylesheets="@Styles/loginform.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerLibrary.LoginFormController">
+    <children>
+        <Label alignment="CENTER" layoutY="62.0" prefHeight="28.0" prefWidth="523.0" text="LOGIN" textFill="#2915dd" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="138.0" prefHeight="25.0" prefWidth="95.0" text="UserName" textFill="#2915dd" AnchorPane.leftAnchor="60.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="220.0" prefHeight="25.0" prefWidth="95.0" text="Password" textFill="#2915dd" AnchorPane.leftAnchor="60.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtUserName" layoutX="220.0" layoutY="138.0" onAction="#txtUserName_Action" prefHeight="25.0" prefWidth="191.0" />
+        <JFXButton fx:id="btnLogin" layoutX="214.0" layoutY="302.0" onAction="#btnLogin_Action" prefHeight="25.0" prefWidth="95.0" text="Login" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="220.0" layoutY="220.0" onAction="#txtPassword_Action" prefHeight="25.0" prefWidth="191.0" />
+    </children>
+</AnchorPane>

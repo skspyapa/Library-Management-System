@@ -1,0 +1,21 @@
+.root{
+    -fx-background-color: #f0efff;
+}
+.button{
+    -fx-background-color: #ff7677;
+
+}
+.button:hover{
+    -fx-background-color: #95afff;
+    -fx-text-fill: white;
+}
+.text-field:focused{
+-fx-background-color: #27dcff;
+}
+.text-field:focused{
+    -fx-highlight-text-fill: #33ff32;
+     -fx-font-size: 17;
+    -fx-text-fill: white;
+
+
+}
